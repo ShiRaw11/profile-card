@@ -30,11 +30,10 @@ body {
 }
 
 .image-card {
-  height: 40%;
+  max-height: 40%;
   margin-top: 20px;
 }
 .profile-picture {
-  margin-top: 20px;
   height: fit-content;
   border-radius: 50%;
   max-width: 250px;
