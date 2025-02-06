@@ -1,0 +1,143 @@
+body,
+h1,
+h2,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000000;
+  font-family: "figtree";
+}
+
+.profile-card {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgb(234, 234, 5);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  max-width: 450px;
+  min-height: 380px;
+  background-color: #1f1f1f;
+  padding: 40px 24px;
+}
+
+.image-card {
+  height: 40%;
+  margin-top: 20px;
+}
+.profile-picture {
+  margin-top: 20px;
+  height: fit-content;
+  border-radius: 50%;
+  max-width: 250px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.name {
+  font-size: 28px;
+  margin-top: 10px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-family: "figtree";
+  font-weight: 500;
+}
+.location {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: #bbdc56;
+  font-family: "figtree";
+  font-weight: 600;
+  padding: 10px;
+}
+.description {
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: #a7a7a7;
+  font-family: "figtree";
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.title {
+  color: #777453;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #a7a7a7;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #0a66c2;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.social-icon {
+  font-size: 1.5em;
+  color: #777453;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #0a66c2;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.time-container i {
+  padding: 10px;
+}
+.date,
+.time {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  color: #bbdc56;
+}
+
+.time {
+  font-size: 0.9rem;
+  color: #007bff;
+}
+
+@media (max-width: 400px) {
+  .profile-card {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Profile Card</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="profile-card">
+      <div class="image-card">
+        <img
+          src="./shiik.jpg"
+          alt="Profile Picture"
+          data-testid="profilePicture"
+          class="profile-picture"
+        />
+      </div>
+
+      <h1 data-testid="fullName" class="name">Edith Kimani</h1>
+      <h2 data-testid="jobTitle" class="title">Frontend Developer</h2>
+      <p data-testid="shortBio" class="description">
+        I’m a passionate frontend developer who loves creating responsive and
+        interactive web applications.
+      </p>
+      <p data-testid="currentLocation" class="location">Nairobi, Kenya</p>
+      <a
+        class="email"
+        href="mailto:shiikimani11@gmail.com"
+        data-testid="emailAddress"
+        >shiikimani11@gmail.com</a
+      >
+      <div data-testid="socialLinks" class="social-links">
+        <a
+          href="https://www.linkedin.com/in/kimani-edith-16a307225/"
+          target="_blank"
+          class="social-icon"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a
+          href="https://github.com/ShiRaw11"
+          target="_blank"
+          class="social-icon"
+          aria-label="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          class="social-icon"
+          aria-label="Twitter"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+      <div data-testid="currentTimeUTC" class="time-container">
+        <span class="date"
+          ><i class="fas fa-calendar-alt"></i> <span id="current-date"></span
+        ></span>
+        <span class="time"
+          ><i class="fas fa-clock"></i> <span id="current-time"></span
+        ></span>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
